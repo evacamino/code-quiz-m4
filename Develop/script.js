@@ -1,13 +1,19 @@
 var questions = [{
-    question: "example question",
-    options: ['a','b','c'],
+    question: "Which one of these is not a way to manipulate HTML elements with JavaScript?",
+    options: ['getElementByFooting()','getElementsByTagName()','getElememntById()'],
+    correctAnswer: 'getElementByFooting()'
+},
+{
+    question: "Which of these will these will allow a function to stop executing?",
+    options: ['invoking a function','returning a function','declaring a function',],
     correctAnswer: 'a'
 },
 {
     question: "example question2",
-    options: ['a','b','c'],
+    options: ['a','b','c',],
     correctAnswer: 'a'
-}]
+},]
+
 
 var question= document.querySelector('#question')
 var q1= document.querySelector('#q1')
