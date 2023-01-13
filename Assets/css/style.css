@@ -6,5 +6,7 @@ body {
 .container {
     display: block;
     margin: 100px auto;
+    width: 300vw;
     background-color: darkblue;
+    text-align: center;
 }
