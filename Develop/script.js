@@ -35,20 +35,19 @@ var buttons = document.querySelectorAll('button')
 buttons.forEach(function (button) {
     button.addEventListener("click", function (event) {
         if (event.target.innerHTML === 'Start Button') {
-            // show the hidden question element
+         
            document.querySelector('main').style.display = 'block'
             timer = setInterval(clock,1000)
             timerE1.textContent = time
         } else {
-            // get the answer the user chose
+           
             console.log(event.target.value)
             var userAnswer = event.target.value 
-            // get the correct anser for THAT question
+           
             var correctAnswer = questions[count].correctAnswer
             console.log(userAnswer, correctAnswer)
 
   
-            // if  correct
        
             if (userAnswer === correctAnswer) {
                 document.getElementById('after').textContent = "Correct! "
@@ -63,10 +62,7 @@ buttons.forEach(function (button) {
 
 
             count += 1
-
-            // get the NEXT question and put it in the question element
             question.innerHTML = questions[count].question
-            // same w/ the options
             q1.textContent = questions[count].options[0]
             q2.textContent = questions[count].options[1]
             q3.textContent = questions[count].options[2]
