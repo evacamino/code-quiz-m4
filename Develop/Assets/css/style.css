@@ -15,3 +15,8 @@ header {
     background-color: bisque;
     text-align: center;
 }
+aside {
+    display: block;
+    text-align: center;
+    background-color: white;
+}
